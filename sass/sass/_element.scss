@@ -15,6 +15,7 @@ a:focus {
     z-index: 9;
     color: $color-word;
     font-size: $font-size;
+    display: none;
     @include screen("mobile") {
         display: none;
     }
@@ -85,7 +86,94 @@ a.more {
         }
     }
 }
+a{
+  &.file_doc,&.file_docx,&.file_odt,&.file_xls,&.file_csv,&.file_ods,&.file_xlsx,&.file_ppt,&.file_pptx,&.file_odp,&.file_zip,&.file_txt,&.file_mov,&.file_mp3,&.file_jpg,&.file_wmv,&.file_mp4,&.file_pdf,&.file_other{
+    width: 26px;
+    height: 28px;
+    display: inline-block;
+    text-indent: -99px;
+    overflow: hidden;
+    vertical-align: middle;
+}
 
+}
+a.file_doc{
+  background: url(../images/basic/icon_doc.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_docx{
+  background: url(../images/basic/icon_docx.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_odt{
+  background: url(../images/basic/icon_odt.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_xls{
+  background: url(../images/basic/icon_xls.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_csv{
+  background: url(../images/basic/icon_csv.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_ods{
+  background: url(../images/basic/icon_ods.png) no-repeat center center;
+  background-size: contain;
+}
+
+a.file_xlsx{
+  background: url(../images/basic/icon_xlsx.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_ppt{
+  background: url(../images/basic/icon_ppt.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_pptx{
+  background: url(../images/basic/icon_pptx.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_odp{
+  background: url(../images/basic/icon_odp.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_zip{
+  background: url(../images/basic/icon_zip.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_txt{
+  background: url(../images/basic/icon_txt.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_mov{
+  background: url(../images/basic/icon_mov.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_mp3{
+  background: url(../images/basic/icon_mp3.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_jpg{
+  background: url(../images/basic/icon_jpg.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_wmv{
+  background: url(../images/basic/icon_wmv.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_mp4{
+  background: url(../images/basic/icon_mp4.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_pdf{
+  background: url(../images/basic/icon_pdf.png) no-repeat center center;
+  background-size: contain;
+}
+a.file_other{
+  background: url(../images/basic/icon_other.png) no-repeat center center;
+  background-size: contain;
+}
 // scrollTop
 .scrollToTop {
     width: 50px;

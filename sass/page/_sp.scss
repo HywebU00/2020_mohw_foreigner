@@ -1,0 +1,198 @@
+.nece{
+	font-size: 0.875rem;
+	margin-bottom: 6px;
+	color: #666;
+}
+.record{
+	float: right;
+	margin-top: -55px;
+	a{
+		@extend %btn;
+		color: #fff;
+		background: $primaryColor;
+		border: 1px solid $primaryColor;
+		border-radius: .4em;
+		vertical-align: top;
+		display: inline-block;
+		margin: 0 5px 0 0;
+		padding: 0.4em 1em 0.4em 2.2em;
+		position: relative;
+		&:before{
+			content: "";
+			width: 16px;
+			height: 16px;
+			display: inline-block;
+			background: url(../images/basic/icon_record.png) no-repeat 0 0;
+			background-size: 16px;
+			position: absolute;
+			vertical-align: sub;
+			left: 12px;
+			top: 10px;
+			filter: invert(1);
+		}
+		&:hover,&:focus{
+			color: #fff;
+			background: $secondaryColor;
+			border: 1px solid $secondaryColor;
+		}
+	}
+}
+.add{
+	float: right;
+	margin-top: -48px;
+	a{
+		@extend %btn;
+		color: #fff;
+		background: $primaryColor;
+		border: 1px solid $primaryColor;
+		border-radius: .4em;
+		vertical-align: top;
+		display: inline-block;
+		margin: 0 5px 0 0;
+		padding: 0.4em 1em 0.4em 2.2em;
+		position: relative;
+		&:before{
+			content: "";
+			width: 16px;
+			height: 16px;
+			display: inline-block;
+			background: url(../images/basic/icon_add.png) no-repeat 0 0;
+			background-size: 16px;
+			position: absolute;
+			vertical-align: sub;
+			left: 12px;
+			top: 10px;
+			filter: invert(1);
+		}
+		&:hover,&:focus{
+			color: #fff;
+			background: $secondaryColor;
+			border: 1px solid $secondaryColor;
+		}
+	}
+}
+.ap{
+	margin: 1em auto 2em auto;
+	padding:1.8em;
+	border-radius: 4px;
+	border: 1px solid rgba(163,163,163,0.2);
+	box-shadow: 0 0 15px rgba(0,0,0,0.05);
+	position: relative;
+	@include box-sizing;
+	input[type="reset"], input[type="submit"]{
+		min-width: 6em;
+	}
+	
+	h3{
+		margin-top: 0;
+		margin-bottom: .8em;
+		color: $primaryColor;
+		&:before{
+			content: "";
+			width: 4px;
+			height: 22px;
+			display: inline-block;
+			margin-right: 8px;
+			background: $primaryColor;
+			border-radius: 5px;
+			vertical-align: sub;
+		}
+	}
+	ol{
+		margin-top: 0;
+		li{
+			margin-bottom: 10px;
+		}
+	}
+	table{
+		td{
+			a{
+				&.edit,&.delete{
+					@extend %btn;
+					color: #222;
+					background: #F3F3F3;
+					border: 1px solid #ddd;
+					border-radius: .4em;
+					vertical-align: top;
+					display: inline-block;
+					margin: 0 5px 0 0;
+					padding: 0.4em 1em 0.4em 2em;
+					position: relative;
+					&:before{
+						content: "";
+						width: 16px;
+						height: 16px;
+						display: inline-block;
+						position: absolute;
+						opacity: .6;
+						vertical-align: sub;
+						left: 12px;
+						top: 10px;
+					}
+					&:hover,&:focus{
+						color: #fff;
+						background: $primaryColor;
+						border: 1px solid $primaryColor;
+						&:before{
+							filter: invert(1);
+							opacity: 1;
+						}
+					}
+				}
+				&.edit{
+					&:before{
+						background: url(../images/basic/icon_edit.png) no-repeat 0 0;
+						background-size: 16px;
+					}
+				}
+				&.delete{
+					&:before{
+						background: url(../images/basic/icon_delete.png) no-repeat 0 0;
+						background-size: 16px;
+					}
+				}
+			}
+		}
+	}
+	form{
+		~h3{
+			margin-top: 2em;
+		}
+	}
+	.attention{
+		color: #444;
+		margin-bottom: 1em;
+		form{
+			background: #f2f2f2;
+			text-align: center;
+			padding: .5em 0;
+			border-radius: 5px;
+			margin-bottom: 0;
+			label{
+				margin-bottom: 0;
+			}
+		}
+		~form{
+			padding: .5em 0;
+			border-top: 0;
+			margin-bottom: 0;
+			display: none;
+			.form_grp{
+				border-top: 1px solid #DDD;
+				border-bottom: 1px solid #DDD;
+			}
+			label.form_title{
+				padding-top: 6px;
+			}
+			.radio_grp{
+				label{
+					width: 20%;
+				}
+			}
+			.btn_grp{
+				padding: .5em 0 0 0;
+			}
+		}
+	}
+
+}

@@ -19,10 +19,19 @@ body {
 .wrapper {
     width: 100%;
     margin: 0px auto;
+    position: relative;
     @include screen('mobile') {
         background: #FFF;
         overflow: hidden;
         overflow-y: auto;
+    }
+    .waves{
+        position: absolute;
+        width: 100%;
+        top: -20px;
+        @include screen('tablet') {
+            display: none;
+        }
     }
 }
 // 整體共用container樣式，請注意首頁切版頁面的整齊
@@ -36,19 +45,36 @@ body {
     margin: 0 auto;
     padding: 0;
     // 可先設定一個中央區塊最大寬，限制accesskey對齊
-    @include screen('mobile') {
-        padding-top: 55px;
+    @include screen('tablet') {
+        padding-top: 80px;
     }
     h2 {
         line-height: 1.25em;
+    }
+    .container{
+        padding:0 30px;
+        @include screen('mobile') {
+            padding:0 1em;
+        }
     }
 }
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
-    padding-top: 2em;
+    position: relative;
+    padding-top: 1.2em;
     @include screen('mobile') {
         padding-top: 5em;
+    }
+    &:before{
+        content: "";
+        width: 100vw;
+        height: 8px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 1px;
+        background: linear-gradient(0deg, rgba(0,0,0,0) 20%, rgba(0,0,0,.1) 100%);
     }
     >.container {
         @include gutter(); //gutter 代表左右要留白

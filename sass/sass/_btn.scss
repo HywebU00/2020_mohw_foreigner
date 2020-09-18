@@ -1,8 +1,8 @@
 // 按鈕設定
 $btn-font-color:$color-word;
 $btn-border:darken($color-word, 5);
-$btn-padding:.5em 1.5em;
-$btn-radius:.2em;
+$btn-padding:.4em 1.5em;
+$btn-radius:.4em;
 // 按鈕外框
 .btn_grp {
     text-align: center;
@@ -32,7 +32,8 @@ $btn-radius:.2em;
 }
 // 按鈕預設陰影
 %btn {
-    font-size: $font-size;
+    // font-size: $font-size;
+    font-size: 1rem;
     touch-action: manipulation;
     background-image: none; //修正firefox
     display: inline-block;
