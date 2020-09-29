@@ -18,6 +18,9 @@ table {
     }
     &.center{
       text-align: center;
+      @include screen('xs_mobile') {
+        text-align: left;
+      }
     }
   }
   th {
@@ -62,7 +65,7 @@ table {
             border: none !important;
             border-bottom: 1px solid #eee !important;
             position: relative;
-            padding-left: 35% !important;
+            // padding-left: 35% !important;
             white-space: normal;
             text-align: left;
             &:before {

@@ -102,15 +102,20 @@
         </div>
         <!-- h2節點 -->
         <h2 class="title">臨床進修申報</h2>
-        <div class="record">
-          <a href="">臨床進修申報紀錄</a>
+        <!-- function功能區塊 -->
+        <div class="function">
+          <ul>
+            <li class="record"><a href="#">臨床進修申報紀錄</a></li>
+            <li class="back"><a href="#">回上一頁</a></li>
+          </ul>
         </div>
         <!-- SP Start -->
         <section class="sp">
           <div class="ap">
-            <h3>申請機關資料</h3>
-            <div class="nece">註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。</div >
             <form action="" class="form_grid">
+              <h3>申請機關資料</h3>
+              <div class="nece">註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。</div >
+
               <div class="form_grp">
                 <label class="form_title">醫院評鑑<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
                 <div class="form_content">
@@ -162,123 +167,120 @@
                 </div>
               </div>
               <div class="form_grp">
-                <label for="" class="form_title">聯絡人姓名</label>
+                <label for="" class="form_title">聯絡人姓名<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
                 <div class="form_content">
-                  增晚話
+                  <input type="text" placeholder="請輸入聯絡人姓名">
                 </div>
               </div>
               <div class="form_grp">
-                <label for="" class="form_title">聯絡人電話</label>
+                <label for="" class="form_title">聯絡人電話<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
                 <div class="form_content">
-                  1234677415152
+                  <input type="text" placeholder="請輸入聯絡人電話">
                 </div>
               </div>
               <div class="form_grp">
                 <label for="" class="form_title">聯絡人傳真</label>
                 <div class="form_content">
-                  1234677415152
+                  <input type="text" placeholder="請輸入聯絡人傳真">
                 </div>
               </div>
               <div class="form_grp">
-                <label for="" class="form_title">聯絡人電子信箱</label>
+                <label for="" class="form_title">聯絡人電子信箱<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
                 <div class="form_content">
-                  veela.tzeng@gmail.com
+                  <input type="text" placeholder="請輸入電子信箱">
                 </div>
               </div>
-            </form>
-            <h3>來臺人員清單</h3>
-            <div class="add"><a href="">新增來臺人員資料</a></div> 
-            <div class="table_list">
-              <table summary="">
-                <thead>
-                  <tr>
-                    <th>序號</th>
-                    <th>姓名</th>
-                    <th>國籍</th>
-                    <th>護照號碼</th>
-                    <th>申請期間</th>
-                    <th>操作</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td data-title="序號" class="center">01</td>
-                    <td data-title="姓名">增晚話</td>
-                    <td data-title="國籍">台灣</td>
-                    <td data-title="護照號碼">1234567899</td>
-                    <td data-title="申請期間" class="center">2018/01/01~2018/01/01</td>
-                    <td data-title="操作" class="center"><a href="" class="edit">編輯</a><a href="" class="delete">刪除</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <form action="" class="form_grid">
+              <h3>來臺人員清單</h3>
+              <div class="add"><a href="">新增來臺人員資料</a></div> 
+              <div class="table_list">
+                <table summary="">
+                  <thead>
+                    <tr>
+                      <th>序號</th>
+                      <th>姓名</th>
+                      <th>國籍</th>
+                      <th>護照號碼</th>
+                      <th>申請期間</th>
+                      <th>操作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-title="序號" class="center">01</td>
+                      <td data-title="姓名">增晚話</td>
+                      <td data-title="國籍">台灣</td>
+                      <td data-title="護照號碼">1234567899</td>
+                      <td data-title="申請期間" class="center">2018/01/01~2018/01/01</td>
+                      <td data-title="操作" class="center"><a href="" class="edit">編輯</a><a href="" class="delete">刪除</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <div class="btn_grp">
                 <input name="" type="reset" value="清除">
                 <input name="Search" type="submit" value="送出">
               </div>
-            </form>
-          </div>
-        </section>
-        <!--  End -->
+            </div>
+          </section>
+          <!--  End -->
+        </div>
       </div>
+      <!-- footer Start-->
+      <footer>
+        <div class="container">
+          <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+          <div class="footer_info">
+            <div class="footer_logo">
+              <img src="images/logo.png" alt="" class="img-responsive">
+            </div>
+            <p>
+              地址：11558 台北市南港區忠孝東路6段488號<br>
+              總機電話：(02)8590-6666 傳真號碼：(02)8590-6000
+            </p>
+            <p class="Copyright">衛生福利部醫事司 版權所有</p>
+          </div>
+          <div class="footer_icon">
+            <ul>
+              <li>
+                <a href="">
+                  <img src="images/facebook.png" alt=""> 
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="images/line.png" alt=""> 
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="images/twitter.png" alt=""> 
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="images/youtube.png" alt=""> 
+                </a>
+              </li>
+            </ul>
+            <ul class="footer_link">
+              <li><a href="javascript:;">隱私權政策</a></li>
+              <li><a href="javascript:;">網站安全政策</a></li>
+              <li><a href="javascript:;">政府網站資料開放宣告</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- footer End -->
     </div>
-    <!-- footer Start-->
-    <footer>
-      <div class="container">
-        <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
-        <div class="footer_info">
-          <div class="footer_logo">
-            <img src="images/logo.png" alt="" class="img-responsive">
-          </div>
-          <p>
-            地址：11558 台北市南港區忠孝東路6段488號<br>
-            總機電話：(02)8590-6666 傳真號碼：(02)8590-6000
-          </p>
-          <p class="Copyright">衛生福利部醫事司 版權所有</p>
-        </div>
-        <div class="footer_icon">
-          <ul>
-            <li>
-              <a href="">
-                <img src="images/facebook.png" alt=""> 
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="images/line.png" alt=""> 
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="images/twitter.png" alt=""> 
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="images/youtube.png" alt=""> 
-              </a>
-            </li>
-          </ul>
-          <ul class="footer_link">
-            <li><a href="javascript:;">隱私權政策</a></li>
-            <li><a href="javascript:;">網站安全政策</a></li>
-            <li><a href="javascript:;">政府網站資料開放宣告</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <!-- footer End -->
-  </div>
-  <a href="javascript:;" class="scrollToTop">回頁首</a>
-  <!-- JQ -->
-  <script src="js/jquery-3.5.1.min.js"></script>
-  <!-- 外掛 plugin js -->
-  <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
-  <!-- hyUI -->
-  <script src="js/hyui.js"></script>
-  <!-- 客製js -->
-  <script src="js/customize.js"></script>
-</body>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <!-- hyUI -->
+    <script src="js/hyui.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+  </body>
 
-</html>
+  </html>

@@ -37,7 +37,7 @@
             <li><a href="#">常見問題</a></li>
             <li><a href="#">操作手冊</a></li>
             <li><a href="#">客服信箱</a></li>
-            <li><a href="#" class="loginbt">登出</a></li>
+            <li><a href="#" class="loginbt">登入</a></li>
             <li><a href="#" class="menubt">選單</a></li>
             <li><a href="#" class="searchbt">搜尋</a></li>
           </ul>
@@ -96,38 +96,48 @@
         <div class="breadcrumb">
           <ul>
             <li><a href="#">首頁</a></li>
-            <li>外國醫事人員來臺進修／教學申報平台</li>
+            <li><a href="#">外國醫事人員來臺進修／教學申辦平台</a></li>
+            <li>建立新申報案件</li>
           </ul>
         </div>
         <!-- h2節點 -->
-        <h2 class="title">外國醫事人員來臺進修／教學申報平台</h2>
+        <h2 class="title">建立新申報案件</h2>
+        <!-- function功能區塊 -->
+        <div class="function">
+          <ul>
+            <li class="record"><a href="#">臨床進修申報紀錄</a></li>
+            <li class="record"><a href="#">臨床教學申報紀錄</a></li>
+          </ul>
+        </div>
         <!-- SP Start -->
         <section class="sp">
           <div class="ap">
-            <div class="nece">註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。</div>
+            <div class="attention">
+              <h3>《注意事項》</h3>
+              <ol>
+                <li>為利本部審查作業，所提供之外國相關證明文件除應清晰可讀外，如非屬中文或英文，則應請另提供中或英譯資料，且應請於1個月前(進修逾3個月者，應於3個月前），備齊相關資料（請先檢視是否完整）函送本部核定。</li>
+                <li>臨床教學之醫療技術如屬人體試驗項目，請依醫療法有關規定，報部核准後，使得施行。</li>
+                <li>臨床教學之醫療技術如屬特定醫療技術檢查檢驗醫療儀器施行或使用管理辦法規範項目，則應依前開辦法之相關規定辦理。</li>
+                <li>外國醫事人員從事臨床教學或臨床進修，應依醫事法規定及衛生福利部107年9月6日衛部醫字第1071665680號函「教學醫院接受外國醫事人員從事臨床進修或教學申請作業要點」規定辦理。</li>
+              </ol>
+              <form action="">
+                <div class="radio_grp">
+                  <label><input type="radio"  id="RDBAgree" name="RDBAgree" value="1" required="required" onclick="onClickAgree();">我已詳閱且同意上述注意事項內容</label>
+                </div>
+              </form>
+            </div>
             <form action="" class="form_grid">
               <div class="form_grp">
-                <label for="" class="form_title">帳號<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                <label class="form_title">請選擇申辦項目</label>
                 <div class="form_content">
-                  <input type="text" id="" value="">
-                </div>
-              </div>
-              <div class="form_grp">
-                <label for="password" class="form_title">密碼<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
-                <div class="form_content">
-                  <input name="" id="" type="text">
-                </div>
-              </div>
-              <div class="form_grp">
-                <label class="form_title">驗證碼<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
-                <div class="form_content">
-                  <img src="images/basic/captcha.gif" alt="" class="captcha">
-                  <input type="text" id="" value=""><a href="" class="refresh">更換驗證碼</a>
+                  <div class="radio_grp form_inline">
+                    <label><input type="radio" name="sampleRadio5" value="" checked="">臨床進修</label>
+                    <label><input type="radio" name="sampleRadio5" value="">臨床教學</label>
+                  </div>
                 </div>
               </div>
               <div class="btn_grp">
-                <input name="" type="reset" value="清除">
-                <input name="Search" type="submit" value="登入">
+                <input name="Search" type="submit" value="建立">
               </div>
             </form>
           </div>

@@ -14,22 +14,28 @@ div.function {
   @extend %clearfix;
   float: right;
   margin-top: -60px;
+  @include screen('xs_mobile') {
+    margin-top: 0;
+  }
   ul {
     @include li-reset;
     li {
       width: 40px;
-      height: 40px;
       font-size: 1em;
       float: left;
       display: block;
       margin: 0 .2em;
+      @include screen('xs_mobile') {
+        margin: .2em 0;
+        float: none;
+      }
       a {
         display: block;
         @include box-sizing;
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
         text-align: center;
-        line-height: 40px;
+        line-height: 36px;
         border-radius: 50%;
         background: #888;
         text-indent: -9999px;

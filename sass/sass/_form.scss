@@ -26,69 +26,68 @@ select::-ms-expand {
     border-bottom: 1px dotted #DDD;
     overflow: hidden;
     padding: .2em 0;
-        // 閱讀條文
-        &.agree {
-          border-bottom: none;
-          label {
-            float: left;
-            width: auto;
-            margin: 0 .5em .5em 0;
-          }
+    &.agree {
+      border-bottom: none;
+      label {
+        float: left;
+        width: auto;
+        margin: 0 .5em .5em 0;
+      }
+    }
+  }
+  .form_title {
+    float: left;
+    width: $form_title_width;
+    font-weight: bold; 
+    @include gutter();
+    padding-top: 6px;
+    @include screen('mobile') {
+      width: 100%;
+    }
+  }
+  .form_content {
+    float: left;
+    padding-top: 3px;
+    width: calc(100% - #{$form_title_width});
+    @include gutter();
+    overflow: hidden;
+    @include screen('mobile') {
+      width: 100%;
+    }
+    a.refresh{
+      @extend %btn;
+      color: #444;
+      background: #efefef;
+      border: 1px solid #ccc;
+      border-radius: .4em;
+      vertical-align: top;
+      display: inline-block;
+      margin: 0 0 0 5px;
+      padding: 0.4em 1em 0.4em 2em;
+      position: relative;
+      &:before{
+        content: "";
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background: url(../images/basic/icon_reload.png) no-repeat 0 0;
+        background-size: 16px;
+        position: absolute;
+        opacity: .6;
+        vertical-align: sub;
+        left: 12px;
+        top: 10px;
+      }
+      &:hover,&:focus{
+        color: #fff;
+        background: $secondaryColor;
+        border: 1px solid $secondaryColor;
+        &:before{
+          filter: invert(1);
+          opacity: 1;
         }
       }
-      .form_title {
-        float: left;
-        width: $form_title_width;
-        font-weight: bold; 
-        @include gutter();
-        padding-top: 6px;
-        @include screen('mobile') {
-          width: 100%;
-        }
-      }
-      .form_content {
-        float: left;
-        padding-top: 3px;
-        width: calc(100% - #{$form_title_width});
-        @include gutter();
-        overflow: hidden;
-        @include screen('mobile') {
-          width: 100%;
-        }
-        a.refresh{
-          @extend %btn;
-          color: #444;
-          background: #efefef;
-          border: 1px solid #ccc;
-          border-radius: .4em;
-          vertical-align: top;
-          display: inline-block;
-          margin: 0 0 0 5px;
-          padding: 0.4em 1em 0.4em 2em;
-          position: relative;
-          &:before{
-            content: "";
-            width: 16px;
-            height: 16px;
-            display: inline-block;
-            background: url(../images/basic/icon_reload.png) no-repeat 0 0;
-            background-size: 16px;
-            position: absolute;
-            opacity: .6;
-            vertical-align: sub;
-            left: 12px;
-            top: 10px;
-          }
-          &:hover,&:focus{
-            color: #fff;
-            background: $secondaryColor;
-            border: 1px solid $secondaryColor;
-            &:before{
-              filter: invert(1);
-              opacity: 1;
-            }
-          }
-        }
+    }
 
         // 第二層的設定
         .form_grp {
@@ -102,6 +101,7 @@ select::-ms-expand {
             padding-right: 1em;
             padding-left: 2px;
             white-space: nowrap;
+            border-right: 1px dotted #ddd;
           }
           .form_content {
             float: none;
@@ -193,6 +193,7 @@ select::-ms-expand {
           @include screen('xs_mobile') {
             width: 100%;
             display: block;
+            padding-right: 0;
           }
           &+.datepick {
             margin-left: .3em;

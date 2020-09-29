@@ -225,7 +225,7 @@
       width: 100%;
       height: auto;
       margin-bottom: 1em;
-      background: #CCC;
+      background: #fff;
       a {
         display: block;
         color: #222;
@@ -262,10 +262,13 @@
         display: block;
         float: none;
         width: 100%;
+        border: 0;
         ul {
           background: #FFF;
+          border-bottom: 1px solid #CCC;
         }
         >a {
+          margin: 0;
           padding: .5em 1em;
           min-height:2em;
           line-height: 2em;
@@ -295,9 +298,11 @@
             }
           }
         }
+        &:last-child a{
+          border-bottom: 0;
+        }
         li {
           background: #FFF;
-
           a {
             min-height:1.5em;
             line-height: 1.5em;

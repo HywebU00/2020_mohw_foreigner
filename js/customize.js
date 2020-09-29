@@ -142,3 +142,25 @@ $(function() {
         $(".attention").next("form").fadeIn();
     });
 });
+
+$(function(){
+  function plth(){
+    var thWidth = 0;
+    $('.table_list th').each(function(){
+      if($(this).width()>thWidth){
+        thWidth = $(this).width(); 
+    }
+});
+    if ($(window).outerWidth() <= 576) { 
+      var allWidth=$('.table_list table').width(),
+      thRealWidth=Math.floor((thWidth/allWidth)*100);
+      $(".table_list td").css({"padding-left":(thRealWidth+5)+"%"});
+  } else{
+      $(".table_list td").css({"padding-left":""});
+  };
+}
+$(window).bind('resize load', function(e) {
+    plth();
+});
+plth();
+});

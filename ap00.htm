@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="zh-Hant" class="no-js">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,6 +37,7 @@
             <li><a href="#">常見問題</a></li>
             <li><a href="#">操作手冊</a></li>
             <li><a href="#">客服信箱</a></li>
+            <li><a href="#" class="loginbt">登出</a></li>
             <li><a href="#" class="menubt">選單</a></li>
             <li><a href="#" class="searchbt">搜尋</a></li>
           </ul>
@@ -82,12 +84,6 @@
             </ul>
           </div>
         </div>
-        <div class="loginInfo">
-          <div class="info">
-            <div class="name">Edward</div>
-            <p>登入時間 : 109.04.07  11:03:12<br>IP : 123.156.0.1</p>
-          </div>
-        </div>
       </div>
     </header>
     <!-- header End -->
@@ -100,60 +96,43 @@
         <div class="breadcrumb">
           <ul>
             <li><a href="#">首頁</a></li>
-            <li><a href="#">節點</a></li>
-            <li>節點</li>
+            <li>外國醫事人員來臺進修／教學申報平台</li>
           </ul>
         </div>
         <!-- h2節點 -->
-        <h2 class="title">轉寄友人</h2>
-        <!-- function功能區塊 -->
-        <div class="function">
-          <ul>
-            <li class="back"><a href="#">回上一頁</a></li>
-          </ul>
-        </div>
-        <!-- FP Start -->
-        <section class="fp">
-          <div class="nece">註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。</div >
-          <form action="" class="form_grid">
-            <div class="form_grp">
-              <label for="" class="form_title">您的電子信箱<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
-              <div class="form_content">
-                <input type="text" id="" value="">
-                <div class="notice_warning">這似乎不是一個正常的格式 <a href="javascript:;" class="close"><img src="images/basic/icon_close.svg" alt=""></a>
+        <h2 class="title">外國醫事人員來臺進修／教學申報平台</h2>
+        <!-- SP Start -->
+        <section class="sp">
+          <div class="ap">
+            <div class="nece">註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。</div>
+            <form action="" class="form_grid">
+              <div class="form_grp">
+                <label for="" class="form_title">帳號<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                <div class="form_content">
+                  <input type="text" id="" value="">
                 </div>
               </div>
-            </div>
-            <div class="form_grp">
-              <label for="" class="form_title">收件者電子信箱<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
-              <div class="form_content">
-                <input name="" id="" type="text">
-                <div class="notice_info">請輸入Email，多個帳號請用 ; 隔開。 <a href="javascript:;" class="close"><img src="images/basic/icon_close.svg" alt=""></a>
+              <div class="form_grp">
+                <label for="password" class="form_title">密碼<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                <div class="form_content">
+                  <input name="" id="" type="text">
                 </div>
               </div>
-            </div>
-            <div class="form_grp">
-              <label for="" class="form_title">內容<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
-              <div class="form_content">
-                <textarea name="" id="" cols="30" rows="70"></textarea>
-              </div>
-            </div>
-            <div class="form_grp">
-              <label class="form_title">驗證碼<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
-              <div class="form_content">
-                <img src="images/basic/captcha.gif" alt="" class="captcha">
-                <input type="text" id="" value=""><a href="" class="refresh">更換驗證碼</a>
-                <div class="notice_error">您輸入的驗證碼錯誤 <a href="javascript:;" class="close"><img src="images/basic/icon_close.svg" alt=""></a>
+              <div class="form_grp">
+                <label class="form_title">驗證碼<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                <div class="form_content">
+                  <img src="images/basic/captcha.gif" alt="" class="captcha">
+                  <input type="text" id="" value=""><a href="" class="refresh">更換驗證碼</a>
                 </div>
               </div>
-            </div>
-            <div class="btn_grp">
-              <input name="" type="reset" value="清除">
-              <input name="" type="submit" value="送出">
-            </div>
-          </form>
+              <div class="btn_grp">
+                <input name="" type="reset" value="清除">
+                <input name="Search" type="submit" value="登入">
+              </div>
+            </form>
+          </div>
         </section>
-        <!-- FP End -->
+        <!-- SP End -->
       </div>
     </div>
     <!-- footer Start-->
@@ -208,13 +187,10 @@
   <script src="js/jquery-3.5.1.min.js"></script>
   <!-- 外掛 plugin js -->
   <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
-  <script src="vendor/slick/slick.min.js "></script><!-- slick -->
-  <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
-  <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
-  <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
-  <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
   <!-- hyUI -->
   <script src="js/hyui.js"></script>
   <!-- 客製js -->
   <script src="js/customize.js"></script>
 </body>
+
+</html>

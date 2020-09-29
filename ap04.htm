@@ -97,125 +97,215 @@
           <ul>
             <li><a href="#">首頁</a></li>
             <li><a href="#">外國醫事人員來臺進修／教學申報平台</a></li>
-            <li>臨床教學申報</li>
+            <li>臨床教學</li>
           </ul>
         </div>
         <!-- h2節點 -->
         <h2 class="title">臨床教學申報</h2>
-        <div class="record">
-          <a href="">臨床教學申報紀錄</a>
+        <div class="function">
+          <ul>
+            <li class="back"><a href="#">回上一頁</a></li>
+          </ul>
         </div>
         <!-- SP Start -->
         <section class="sp">
           <div class="ap">
-            <h3>申請機關資料</h3>
+            <h3>來臺人員基本資料</h3>
             <div class="nece">註:<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>為必填(選)欄位, 不能為空白。</div >
             <form action="" class="form_grid">
               <div class="form_grp">
-                <label class="form_title">醫院評鑑<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                <label for="" class="form_title">姓名<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                <div class="form_content">
+                  <input type="text" id="" value="">
+                </div>
+              </div>
+              <div class="form_grp">
+                <label for="" class="form_title">護照號碼<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                <div class="form_content">
+                  <input type="text" id="" value="">
+                </div>
+              </div>
+              <div class="form_grp">
+                <label for="" class="form_title">國籍<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                <div class="form_content form_inline">
+                  <select id="selectSample" name="">
+                    <option value="">亞洲</option>
+                    <option value="">非洲</option>
+                    <option value="">美洲</option>
+                    <option value="">歐洲</option>
+                    <option value="">大洋洲</option>
+                  </select>
+                  <select id="selectSample" name="">
+                    <option value="">台灣</option>
+                    <option value="">日本</option>
+                    <option value="">美國</option>
+                    <option value="">澳洲</option>
+                    <option value="">新加坡</option>
+                    <option value="">中國大陸</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form_grp">
+                <label class="form_title">性別<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
                 <div class="form_content">
                   <div class="radio_grp form_inline">
-                    <label><input type="radio" name="sampleRadio5" value="" checked="">醫學中心</label>
-                    <label><input type="radio" name="sampleRadio5" value="">區域醫院</label>
-                    <label><input type="radio" name="sampleRadio5" value="">地區醫院</label>
+                    <label><input type="radio" name="" value="" checked="">男性</label>
+                    <label><input type="radio" name="" value="">女性</label>
+                    <label><input type="radio" name="" value="">其他</label>
                   </div>
                 </div>
               </div>
               <div class="form_grp">
-                <label for="" class="form_title">教學醫院評鑑合格<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                <label for="" class="form_title">申請期間<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
                 <div class="form_content">
-                  <div class="form_grp">
-                    <label class="form_title"><input name="" type="checkbox" id="" value="A" disabled="disabled" checked="checked">醫師類</label>
+                  <div class="datepick">
+                    <input name="" type="text" value="" class="calendar" placeholder="開始日期">
+                    <i class="i_calendar"></i>
+                  </div>
+                  <div class="datepick">
+                    <input name="" type="text" value="" class="calendar" placeholder="結束日期">
+                    <i class="i_calendar"></i>
+                  </div>
+                  <span>（申請臨床進修以兩年為限，得酌予延長兩年）</span>
+                </div>
+              </div>
+              <div class="form_grp">
+                <label for="" class="form_title">教學示範項目<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                <div class="form_content">
+                  <textarea name="" id="" cols="30" rows="70"></textarea>
+                  <span>（限100字，須以中文描述）</span>
+                </div>
+              </div>
+              <div class="form_grp">
+                <label for="" class="form_title">備註</label>
+                <div class="form_content">
+                  <textarea name="" id="" cols="30" rows="70"></textarea>
+                  <span>（限200字）</span>
+                </div>
+              </div>
+              <div class="form_grp">
+                <label for="" class="form_title">檢附資料<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                <div class="form_content">
+                  <div class="notice_info"> 注意事項
+                    <ol>
+                      <li>以下1~4項皆需依說明上傳附件，第5項若進修申請期間為3~6個月內則須檢附健康報告。</li>
+                      <li>附件上傳：檔案大小限制3mb，格式為docx、xlsx、pptx、pdf、txt、jpg、gif。</li>
+                    </ol> 
+                    <a href="javascript:;" class="close"><img src="images/basic/icon_close.svg" alt=""></a>
+                  </div>
+                  <div class="form_grp2">
+                    <label for="" class="form_title">1.護照影本或其他身份證明文件影本<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
                     <div class="form_content">
-                      <div class="check_grp form_inline">
-                        醫事人員類︰<br>
-                        <label><input name="CBLTeachingType" type="checkbox" value="B001" disabled="disabled" checked="checked">醫師</label>
-                        <label><input name="CBLTeachingType" type="checkbox" value="B002" disabled="disabled" checked="checked">中醫師</label>
-                        <label><input name="CBLTeachingType" type="checkbox" value="B003" disabled="disabled">牙醫師</label>
-                        <label><input name="CBLTeachingType" type="checkbox" value="B004" disabled="disabled">藥師（藥劑師）</label>
-                        <label><input name="CBLTeachingType" type="checkbox" value="B005" disabled="disabled">護理師（護士）</label>
-                        <label><input name="CBLTeachingType" type="checkbox" value="B006" disabled="disabled">物理治療師（物理治療生）</label>
-                        <label><input name="CBLTeachingType" type="checkbox" value="B007" disabled="disabled">職能治療師（職能治療生）</label>
-                        <label><input name="CBLTeachingType" type="checkbox" value="B008" disabled="disabled">醫事檢驗師（醫師檢驗生）</label>
-                        <label><input name="CBLTeachingType" type="checkbox" value="B009" disabled="disabled">醫事放射師（醫事放射生）</label>
+                      <div class="upload_grp">
+                        <input class="upload_file" type="text" readonly>
+                        <div class="upload_btn">
+                          <span>上傳檔案</span>
+                          <input type="file" class="check_file" />
+                        </div>
                       </div>
+                      <!-- 檔案列表 -->
+                      <div class="file_list">
+                        <ul>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form_grp2">
+                    <label for="" class="form_title">2.外國醫事人員證書、專科醫師證書或其他資格證明影本（含中譯或英譯本）<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                    <div class="form_content">
+                      <div class="upload_grp">
+                        <input class="upload_file" type="text" readonly>
+                        <div class="upload_btn">
+                          <span>上傳檔案</span>
+                          <input type="file" class="check_file" />
+                        </div>
+                      </div>
+                      <!-- <div class="file_list">
+                        <ul>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                        </ul>
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="form_grp2">
+                    <label for="" class="form_title">3.服務機構現任職務證明文件（含中譯或英譯本）<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                    <div class="form_content">
+                      <select name="" id="">
+                        <option value="">3-1 現任外國醫學院教授、副教授、助理教授、講師</option>
+                        <option value="">3-2 醫學院附設教學醫學院之主治醫師</option>
+                        <option value="">3-3 其他於醫學或該醫事領域具國際聲譽之專家</option>
+                      </select>
+                      <div class="upload_grp">
+                        <input class="upload_file" type="text" readonly>
+                        <div class="upload_btn">
+                          <span>上傳檔案</span>
+                          <input type="file" class="check_file" />
+                        </div>
+                      </div>
+                      <!-- <div class="file_list">
+                        <ul>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                        </ul>
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="form_grp2">
+                    <label for="" class="form_title">4.國內負責醫事人員（例如醫師正數或執業執照）<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                    <div class="form_content">
+                      <input type="text" id="" value="" placeholder="請說明文件內容">
+                      <div class="upload_grp">
+                        <input class="upload_file" type="text" readonly>
+                        <div class="upload_btn">
+                          <span>上傳檔案</span>
+                          <input type="file" class="check_file" />
+                        </div>
+                      </div>
+                      <!-- <div class="file_list">
+                        <ul>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                        </ul>
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="form_grp2">
+                    <label for="" class="form_title">5.其他中或英譯資料</label>
+                    <div class="form_content">
+                      <input type="text" id="" value="" placeholder="請說明文件內容">
+                      <div class="upload_grp">
+                        <input class="upload_file" type="text" readonly>
+                        <div class="upload_btn">
+                          <span>上傳檔案</span>
+                          <input type="file" class="check_file" />
+                        </div>
+                      </div>
+                      <!-- <div class="file_list">
+                        <ul>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                          <li><a href="" class="file_name">護照影本或其他身份證明文件影本</a><a href="" class="delete">刪除</a></li>
+                        </ul>
+                      </div> -->
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="form_grp">
-                <label for="" class="form_title">教學醫院名稱</label>
-                <div class="form_content">
-                  Hyweb Test
-                </div>
-              </div>
-              <div class="form_grp">
-                <label for="" class="form_title">教學醫院電話</label>
-                <div class="form_content">
-                  0123456789#123
-                </div>
-              </div>
-              <div class="form_grp">
-                <label for="" class="form_title">教學醫院地址</label>
-                <div class="form_content">
-                  Hyweb Test Address
-                </div>
-              </div>
-              <div class="form_grp">
-                <label for="" class="form_title">聯絡人姓名</label>
-                <div class="form_content">
-                  增晚話
-                </div>
-              </div>
-              <div class="form_grp">
-                <label for="" class="form_title">聯絡人電話</label>
-                <div class="form_content">
-                  1234677415152
-                </div>
-              </div>
-              <div class="form_grp">
-                <label for="" class="form_title">聯絡人傳真</label>
-                <div class="form_content">
-                  1234677415152
-                </div>
-              </div>
-              <div class="form_grp">
-                <label for="" class="form_title">聯絡人電子信箱</label>
-                <div class="form_content">
-                  veela.tzeng@gmail.com
-                </div>
-              </div>
-            </form>
-            <h3>來臺人員清單</h3>
-            <div class="add"><a href="">新增來臺人員資料</a></div> 
-            <div class="table_list">
-              <table summary="">
-                <thead>
-                  <tr>
-                    <th>序號</th>
-                    <th>姓名</th>
-                    <th>國籍</th>
-                    <th>護照號碼</th>
-                    <th>申請期間</th>
-                    <th>操作</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td data-title="序號" class="center">01</td>
-                    <td data-title="姓名">增晚話</td>
-                    <td data-title="國籍">台灣</td>
-                    <td data-title="護照號碼">1234567899</td>
-                    <td data-title="申請期間" class="center">2018/01/01~2018/01/01</td>
-                    <td data-title="操作" class="center"><a href="" class="edit">編輯</a><a href="" class="delete">刪除</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <form action="" class="form_grid">
               <div class="btn_grp">
-                <input name="" type="reset" value="清除">
-                <input name="Search" type="submit" value="送出">
+                <input name="" type="reset" value="取消">
+                <input name="Search" type="submit" value="加入清單">
               </div>
             </form>
           </div>

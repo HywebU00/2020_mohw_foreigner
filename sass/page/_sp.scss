@@ -1,38 +1,48 @@
+.sp{
+	clear: both;
+	@include screen('xs_mobile') {
+		padding-top: 1em;
+	}
+}
 .nece{
 	font-size: 0.875rem;
 	margin-bottom: 6px;
 	color: #666;
 }
 .record{
-	float: right;
-	margin-top: -55px;
+	width: auto!important;
+	@include screen('xs_mobile') {
+		float: left!important;
+	}
 	a{
 		@extend %btn;
+		width: auto!important;
 		color: #fff;
-		background: $primaryColor;
+		background: $primaryColor!important;
 		border: 1px solid $primaryColor;
-		border-radius: .4em;
+		border-radius: .4em!important;
 		vertical-align: top;
-		display: inline-block;
+		display: inline-block!important;
 		margin: 0 5px 0 0;
-		padding: 0.4em 1em 0.4em 2.2em;
-		position: relative;
+		padding: 0em 1em 0em 2.2em;
+		position: relative!important;
+		text-indent: 0!important;
 		&:before{
 			content: "";
-			width: 16px;
-			height: 16px;
+			width: 16px!important;
+			height: 16px!important;
 			display: inline-block;
 			background: url(../images/basic/icon_record.png) no-repeat 0 0;
 			background-size: 16px;
-			position: absolute;
+			position: absolute!important;
 			vertical-align: sub;
-			left: 12px;
-			top: 10px;
-			filter: invert(1);
+			left: 12px!important;
+			top: 10px!important;
+			filter: invert(1)!important;
 		}
 		&:hover,&:focus{
-			color: #fff;
-			background: $secondaryColor;
+			color: #fff!important;
+			background: $secondaryColor!important;
 			border: 1px solid $secondaryColor;
 		}
 	}
@@ -40,6 +50,11 @@
 .add{
 	float: right;
 	margin-top: -48px;
+	@include screen('xs_mobile') {
+		float: none;
+		margin-top: 0;
+		margin-bottom: 8px;
+	}
 	a{
 		@extend %btn;
 		color: #fff;
@@ -79,10 +94,16 @@
 	box-shadow: 0 0 15px rgba(0,0,0,0.05);
 	position: relative;
 	@include box-sizing;
+	@include screen('xs_mobile') {
+		border-radius: 4px;
+		border: 0;
+		box-shadow: none;
+		padding: 0;
+		margin: 0;
+	}
 	input[type="reset"], input[type="submit"]{
 		min-width: 6em;
 	}
-	
 	h3{
 		margin-top: 0;
 		margin-bottom: .8em;
@@ -155,8 +176,16 @@
 		}
 	}
 	form{
+		border-top: 0;	
 		~h3{
 			margin-top: 2em;
+		}
+		.form_grp{
+			border-top: 1px dotted #DDD;
+			margin-bottom: 0;
+			~h3{
+				margin-top: 2em;
+			}
 		}
 	}
 	.attention{
@@ -194,5 +223,96 @@
 			}
 		}
 	}
+	.form_title,.form_content{
+		@include screen('mobile') {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.form_content.form_inline{
+		display: flex;
+		justify-content: space-between;
+		@include screen('xs_mobile') {
+			display: block;
+		}
+		select,input[type="text"]{
+			width: 49.5%;
+			@include screen('xs_mobile') {
+				width: 100%;
+			}
+		}
+	}
 
+}
+.form_grp2{
+	.form_title,.form_content{
+		display: block;
+		width: 100%;
+		float: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.upload_btn{
+		top: 0;
+		border: 0;
+		text-shadow: none;
+		background: $primaryColor;
+		&:hover,&:focus{
+			border: 0!important;
+			background: $secondaryColor;
+		}
+	}
+	.file_list{
+		padding: .4rem 1rem;
+		background: #efefef;
+		border-radius: 3px; 
+		margin-bottom: 10px;
+		font-size: 0.875rem;
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li{
+				padding: .5em 3em .5em .5em;
+				border-bottom: 1px dotted #ccc;
+				position: relative;
+				&:last-child{
+					border-bottom: 0;
+				}
+				a{
+					color: #222;
+					display: block;
+					&:hover,&:focus{
+						color: $primaryColor;
+						text-decoration: underline;
+					}
+					&.delete{
+						font-size: 0;
+						position: absolute;
+						right: 12px;
+						top: 8px;
+						width: 20px;
+						height: 20px;
+						background: #999;
+						text-align: center;
+						line-height: 20px;
+						border-radius: 3px;
+						&:hover,&:focus{
+							background: $secondaryColor;
+						}
+						&:before{
+							content: "";
+							width: 12px;
+							height: 20px;
+							display: inline-block;
+							vertical-align: sub;
+							background: url(../images/basic/icon_delete2.png) no-repeat 0 center;
+							background-size: 12px;
+							filter: invert(1);
+						}
+					}
+				}
+			}
+		}
+	}
 }

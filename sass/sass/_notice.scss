@@ -50,6 +50,14 @@
         background: url(../images/basic/icon_info.svg) no-repeat center center;
         background-size: 15px;
     }
+    ol,ul{
+        margin-top: 5px !important;
+        margin-left: -20px;
+        margin-bottom: 0;
+        li{
+            margin-bottom: 4px!important;
+        }
+    }
 }
 *[class*="notice_success"] {
     color: #4F8A10;
