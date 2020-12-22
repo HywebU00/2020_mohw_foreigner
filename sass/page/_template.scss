@@ -29,10 +29,11 @@ body {
         position: absolute;
         width: 100%;
         top: -20px;
-        background-image:url(../images/bg.png)\9;
+        background-image:url(../images/bg.png);
         background-repeat: no-repeat;
         background-size: contain;
-        height: 1000px\9;
+        height: 1000px;
+        background-position: 0 -60px;
         @include screen('tablet') {
             display: none;
         }
